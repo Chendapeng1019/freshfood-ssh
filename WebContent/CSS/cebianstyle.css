@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	text-decoration:none;
+	font-family:arial ;
+	list-style-type: none;
+}
+.right-sidebar{
+	padding-top: 120px;
+	width:35px;
+	z-index: 1000;
+	right:0;
+	background: #2b2b2b;
+	min-height: 100%;
+	color: #FFF;
+	position:fixed;
+	right: 0px;
+	top:0px;
+}
+
+.user{
+	width:35px;
+	height: 38px;
+	
+}
+.user:hover{
+	background:#ED145B;
+}
+
+.user a img{
+	width: 18px;
+	height: 19px;
+	padding-top: 10px;
+	padding-left: 8px;
+}
+
+.userbox {
+	
+	width: 267px;
+	height: 185px;
+	padding: 10px;
+	background: #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,.4);
+	border-radius: 5px 0 0 5px;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	z-index: 3;
+	position: absolute;
+	top: 120px;
+	right:35px;
+	display: block;
+	visibility: hidden;
+}
+.userbox .img img{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	float: left;
+}
+
+.userbox .info {
+	color:#000000;
+	line-height: 24px;
+	margin-top: 30px;
+	padding-left: 15px;
+	width:150px;
+	float: left;
+	font-weight: 500px;
+	
+}
+.userbox .info  li{
+	height: 24px;
+	width:150px;
+	float: left;
+	margin-top: 5px;
+}
+.userbox .box{
+	width: 267px;
+	height: 32px;
+	float: left;
+	margin-top: 25px;
+}
+.box1{
+	width: 94px;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+	text-align: center;
+	border:1px solid #CCC5C5;
+	margin-left: 25px;
+	color: #000000;
+}
+
+.shoppingcar {
+	width: 35px;
+	height: 130px;
+   
+}
+
+.shoppingcar:hover{
+	background: #ED145B;
+}
+
+.shoppingcar .img img{
+	width: 22px;
+	height: 19px;
+	margin-top:10px;
+	margin-left:8px;
+}
+.shoppingcar p{
+	font-size: 11px;
+	width:16px;
+	margin-top: 8px;
+	margin-left:12px;
+	color: #FFFFFF;
+}
+.shoppingcar .num{
+	width: 21px;
+	height: 21px;
+	border-radius: 50%;
+	background: #ED145B;
+	text-align: center;
+	line-height: 21px;
+	color:#FFFFFF;
+	margin-left: 8px;
+	margin-top: 0px;
+}
+
+.foot {
+	width: 35px;
+	height: 38px;
+	float: left;
+}
+
+.foot:hover{
+	background: #ED145B;
+}
+
+.foot a img{
+    width: 15px;
+	height: 26px;
+	margin-top:5px;
+	margin-left:12px;
+}
+
+.myfoot{
+	height: 38px;
+	width:92px;
+	line-height: 38px;
+	background: #2b2b2b;
+	left:-120px;
+	top:288px;
+	font-size: 12px;
+	position: absolute;
+	text-align: center;
+	color:#d8d8d8;
+	float: left;
+	display: block;
+	visibility: hidden;
+}
+
+.shoucang {
+	width: 35px;
+	height: 38px;
+	float: left;
+}
+
+.shoucang:hover{
+	background: #ED145B;
+}
+
+.shoucang a img{
+    width: 35px;
+	height: 35px;
+	margin-top:0px;
+	margin-left:0px;
+}
+
+.myshoucang{
+	height: 38px;
+	width:92px;
+	line-height: 38px;
+	background: #2b2b2b;
+	left:-120px;
+	top:326px;
+	font-size: 12px;
+	position: absolute;
+	text-align: center;
+	color:#d8d8d8;
+	float: left;
+	display: block;
+	visibility: hidden;
+}
+
+.kefu {
+	margin-top:290px;
+	width: 35px;
+	height: 38px;
+	float: left;
+}
+
+.kefu:hover{
+	background: #ED145B;
+}
+
+.kefu a img{
+    width: 25px;
+	height: 26px;
+	margin-top:5px;
+	margin-left:5px;
+}
+
+.mykefu{
+	height: 38px;
+	width:92px;
+	line-height: 38px;
+	background: #2b2b2b;
+	left:-120px;
+	top:654px;
+	font-size: 12px;
+	position: absolute;
+	text-align: center;
+	color:#d8d8d8;
+	float: left;
+	display: block;
+	visibility: hidden;
+}
+
+.returntop {
+	width: 35px;
+	height: 38px;
+	float: left;
+}
+
+.returntop:hover{
+	background: #ED145B;
+}
+
+.returntop img{
+    width: 25px;
+	height: 26px;
+	margin-top:5px;
+	margin-left:5px;
+}
+

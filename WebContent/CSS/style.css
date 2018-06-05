@@ -1,0 +1,763 @@
+@charset "UTF-8";
+
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-family:Microsoft YaHei ;
+} /*整体字体*/
+
+a:link{
+	text-decoration:none;
+} /*带链接的字体*/
+
+a:hover{
+	color:#DD2124;
+}  /*当鼠标悬停在链接字体上*/
+
+li{
+	list-style: none;
+}
+
+ ul{margin: 0 auto;
+}
+
+
+
+
+
+/*左侧导航栏*/ 
+
+/*轮播图*/
+.ck-slide { 
+	width: 1600px;
+	height: 495px;
+	margin: 0 auto;
+	/*z-index: -100;*/
+}
+
+.ck-slide ul.ck-slide-wrapper
+{
+	height: 495px;
+}
+
+img {
+	border: 0;
+}
+.ck-slide ul {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+.ck-slide {
+	position: relative;
+	overflow: hidden;
+}
+.ck-slide ul.ck-slide-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+	margin: 0;
+	padding: 0;
+}
+.ck-slide ul.ck-slide-wrapper li {
+	position: absolute; margin-top:0px;
+}
+.ck-slide ul.ck-slide-wrapper li a{
+	/*a标签是行内元素，宽高对a标签不起作用，这里必须添加line-height:0px;display:black，否则垂直滚动<li>之间会出现间隔*/
+	line-height:0px;
+	display:block;
+}
+.ck-slide .ck-prev, .ck-slide .ck-next {
+	position: absolute;
+	top: 50%;
+	z-index: 2;
+	width: 35px;
+	height: 70px;
+	margin-top: -35px;
+	border-radius: 3px;
+	opacity: .15;
+	background: red;
+	text-indent: -9999px;
+	background-repeat: no-repeat;
+	transition: opacity .2s linear 0s;
+}
+.ck-slide .ck-prev {
+	left: 5px;
+	background: url(../image/arrow-left.png) #000 50% no-repeat;
+}
+.ck-slide .ck-next {
+	right: 5px;
+	background: url(../image/arrow-right.png) #000 50% no-repeat;
+}
+.ck-slidebox {
+	position: absolute;
+	left: 50%;
+	bottom: 12px;
+	z-index: 100;
+}
+.ck-slidebox ul {
+	height: 20px;
+	padding: 0 4px;
+	border-radius: 8px;
+	background: rgba(0,0,0,0.5);
+}
+.ck-slidebox ul li {
+	float: left;
+	height: 12px;
+	margin: 4px 4px;
+}
+.ck-slidebox ul li em {
+	display: block;
+	width: 12px;
+	height: 12px;
+	border-radius: 100%;
+	background-color: #fff;
+	text-indent: -9999px;
+	cursor: pointer;
+}
+.ck-slidebox ul li.current em {
+	background-color: #fe6500;
+}
+.ck-slidebox ul li em:hover {
+	background-color: #fe6500;
+}
+
+/*轮播图end*/
+.left_sort{
+	width: 1600px;
+	height: 495px;
+	 margin: 0 auto;
+}
+.left-sort{
+	width: 950px;
+	height: 495px;
+	margin-left: 260px;
+	margin-top: 0px;
+	float: left;
+	line-height: 62px;
+	position: relative;
+	z-index: 50;
+	
+} 
+
+.food-list{
+	width: 180px;
+	height: 495px;
+	margin-top: 0px;
+	float: left;
+	
+	
+}
+
+
+.list {
+	width: 180px;
+	height: 62px;	
+	margin:0 auto;
+	background:#F57A7C;
+	float: left;
+	opacity:0.8;
+	}
+
+
+.listactive{
+	background:#FFFFFF;
+	opacity:1;/*透明度*/
+	font-size: 23px;
+	color:#CD070A;
+	font-weight: 700;
+	float: left;
+	
+}
+
+.image{
+	width: 80px;
+	height: 62px;
+	margin-top: 0px;
+	margin-left: 0px;
+	float: left;
+	
+}
+
+/*.zi:hover{
+	font-size: 23px;
+	color:#CD070A;
+	font-weight: 700;
+}*/
+
+.zi{
+	float: left;
+	width: 100px;
+	height: 62px;
+	font-size: 19px;
+	font-weight: 700;
+	font-family:arial;
+	color: #000000;
+	margin: 0 auto;
+	/*margin-top: 0px;
+	margin-left: 0px;*/
+}
+
+.foods{
+	
+	display:none;
+}
+	
+.foods.active {
+		display:block;
+	   
+		}
+
+.foods-list{
+    height: 493px;
+	width:750px;
+	float:left;
+    margin-top: 0px;
+	margin-left: 180px;
+	position:absolute;
+	background:#FFFFFF;
+	border-top: 1px solid #EB5B5E;
+	border-bottom: 1px solid #EB5B5E;
+	border-right: 1px solid #EB5B5E;
+	border-left: 0px;
+	
+	
+}
+
+.fore1{
+	width:750px;
+	float:left;
+}
+
+.fore_list{
+	margin-top: 0px; 
+	margin-bottom: 20px;
+	float:left;
+    height: 30px;
+	
+	
+}
+
+.fore_list span{
+	padding:5px;
+	float:left;
+	color:#F33336;
+	font-size: 15px;
+	width:90px;
+	font-weight: 800;
+	font-family:Microsoft YaHei;
+}
+
+.fore_list ul{
+	
+	width:660px;
+
+	
+}
+	
+.fore_list li{
+	
+	float:left;
+	padding: 5px;
+	margin-top: 26px; 
+	
+}
+
+
+.fore_list li a{
+	font-size:13px;
+	color:#434242;
+}
+
+.fore_list li a:hover{
+	color:#F13134;
+}
+
+.fengexian{
+	display: inline-block;
+	padding-left: 10px;
+	color:#909090;
+	border-left: 1px solid #909090;
+	line-height: 1;
+}
+
+.fengexian_last{
+	display: inline-block;
+	padding-right:10px;
+	padding-left: 10px;
+	color:#909090;
+	border-left: 1px solid #909090;
+	border-right: 1px solid #909090;
+	line-height: 1;
+}
+/*左侧导航栏end*/
+
+/*秒杀*/
+.sale-all{
+	width: 1600px;
+	height: 421px;
+	margin:  0 auto;
+}
+.sale{
+	width: 1200px;;
+	height: 421px;
+	background: #ffd800;
+	margin-top: 25px;
+	margin-left: 200px;
+
+}
+
+/*秒杀图标和倒计时*/
+.miaosha{
+	margin-top: 10px;
+	overflow: hidden;
+	height: 93px;
+}
+
+.miaosha i{
+	float:left;
+	display: block;
+	width:120px;
+	height: 93px;
+	background: url(../image/sale-t_clock.jpg);
+	background-size: 100%;
+}
+
+.miaosha .title{
+	font-size: 20px;
+	font-style:italic;
+	line-height: 92px;
+	color: #885621;
+	margin-left:10px;
+	font-weight: 800;
+}
+
+.miaosha .s-time{ 
+    float:right;
+	width:162px;
+	height: 39px;
+	position: relative;
+	background: url(../image/icon-sale.png);
+	background-size:100% ;
+	margin-top:20px ;
+	margin-right: 20px;
+}
+.miaosha .s-time span{
+	top: 0;
+	float:left;
+	display: block;
+	width: 39px;
+	height: 39px;
+	line-height: 39px;
+	font-size:18px;
+	color: #ffeee0;
+	text-align: center;
+	overflow: hidden;
+	font-weight: 600;
+}
+
+.mm{
+	margin-left: 23px;
+}
+
+.ss{
+	margin-left: 22px;
+}
+
+/*秒杀商品*/
+.miaosha-foods{
+	margin-left: 10px;
+	height: 312px;
+	float:left;
+}
+
+.miao_foods{
+	width:289px;
+	height: 317px;
+	background: #fff;
+	margin-left: 5px;
+	float:left;
+}
+
+.miao_foods .img img{
+	width:270px;
+	height: 230px;
+	vertical-align:middle;
+	margin-top: 15px;
+	margin-left: 15px;	
+}
+
+.miaosha-price{
+	height:  68px;
+	width: 289px;
+	
+}
+.miaosha-foodsname{
+	height: 30px;
+	width:100px;
+	margin-left: 10px;
+	font-size: 20px;
+	font-family:arial;
+	font-weight: 600;
+}
+
+.money{
+	float:left;
+	height:38px;
+	
+	font-size: 25px;
+	font-weight: 500;
+	color:#EC2427;
+	margin-left: 15px;
+}
+
+.miaosha1 a{
+	float:right;
+	height: 30px;
+	width: 65px;
+	background: #E03E41;
+	font-size: 18px;
+	line-height: 30px;
+	color: #fff;
+	font-family:arial;
+	margin-right: 15px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.miaosha1 a:hover{
+	color: #000000;
+}
+
+/*商品展示*/
+.foods_display{
+	height:454px;
+	width: 1600px;
+	margin: 0 auto;
+}
+
+.foods-display{
+	height: 454px;
+	width: 1200px;
+	margin-left: 200px;
+	background: #FFFFFF;
+}
+
+.foods-top{
+	height: 54px;
+	width: 1200px;
+	margin-top: 0px;
+	border-bottom:2px solid #68937f;
+}
+
+.foods-type{
+	float: left;
+	font-size:30px;
+	font-family:arial;
+	font-weight:900;
+	line-height: 30px;
+	margin-top: 15px;
+	
+}
+.foods-jianjie{
+	height:25px;
+	
+    line-height: 25px;
+	
+	background:#fff7d1;
+	font-size:13px;
+	font-family:arial;
+	color: #977a6f;
+	float: left;
+	margin-top: 20px;
+}
+
+.content-1{
+	height: 400px;
+	width: 225px;
+	float: left;
+	
+	
+	
+}
+
+.content-1 ul{
+	width: 225px;
+	height: 40px;
+	
+}
+.content-1 ul li a {
+	margin-left: 15px;
+	font-size: 13px;
+	height: 20px;
+	width: 60px;
+	font-family:arial;
+	float: left;
+	line-height: 20px;
+	color:#000000;
+	margin-top: 15px;
+	
+}
+
+.content-1 ul li a:hover{
+	color:#E83639;
+}
+.content-1 .a {
+	width: 225px;
+	height: 22px;
+	font-size:16px;
+	font-weight: 600;
+	color:#F03726 ;/*!important;/*!important最高优先级*/
+     margin-top: 15px;
+	text-align: center;
+	float: left;
+	line-height: 22px;
+	
+}
+.content-1 .b {
+	width: 225px;
+	height: 243px;
+	
+}
+.content-1 .b a img{
+	width: 180px;
+	height: 180px;
+	margin-left:  10%;
+	margin-top:15%;
+	vertical-align:middle;
+	
+}
+.content-1 .b a img:hover{
+	/*width: 200px;
+	height: 200px;
+	margin-left: 6%;
+	margin-top:10%;*/
+	transform: scale(1.2);/*实现放大或缩小倍数*/
+	transition: .7s ease; /*实现放大或缩小产生效果的时间*/
+}
+
+.content-2{
+	height: 400px;
+	width: 300px;
+	background:#fff;
+	float: left;
+}
+.content-2:hover{
+	transform: scale(1.1);
+	transition: .7s ease;
+	z-index: 10;
+	box-shadow:2px 2px 4px  #989191;
+}
+
+.content-2 span{
+	width: 300px;
+	color:#000000;
+	line-height: 30px;
+	margin-top: 25px;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	float: left;
+}
+.content-2 .content-2-prices{
+	width: 300px;
+	height: 24px;
+	color:#666;
+	font-size: 12px;
+	text-align: center;
+	float: left;
+}
+
+.content-2 .photos {
+	height: 320px;
+	width: 300px;
+	float: left;
+}
+
+.photos a img{
+	width: 220px;
+	height: 220px;	
+	vertical-align:middle;
+	margin-left:40px;
+	margin-top:40px;
+}
+.photos a img:hover{
+	transform: scale(1.1);
+	transition: .7s ease;
+}
+
+
+.content-3{
+	height: 400px;
+	width: 224px;
+	float: left;
+}
+.content-3 .box{
+   height: 200px;
+	width: 224px;
+	float: left;
+	z-index: 2;
+	border:1px solid #F0E5E5;
+	transition: .7s ease;
+	background: #FFFFFF;
+}
+
+.content-3 .box:hover{
+	transform: scale(1.1);/*实现放大或缩小倍数*/
+	transition: .7s ease;
+	z-index: 10;
+	box-shadow:2px 2px 4px  #989191;/*box-shadow 向框添加一个或多个阴影。该属性是由逗号分隔的阴影列表，每个阴影由 2-4 个长度值、可选的颜色值以及可选的 inset 关键词来规定。省略长度的值是 0。*/
+	
+}
+
+.box a img {
+	height: 147px;
+	width:147px;
+	vertical-align:middle;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
+.box a img:hover{
+	transform: scale(1.05);/*实现放大或缩小倍数*/
+	transition: .7s ease; /*实现放大或缩小产生效果的时间*/
+}
+
+.box span{
+	height: 22px;
+    width: 224px;
+	text-align: center;
+	font-size:18px;
+	font-weight: 600;
+	float: left;
+	font-family:arial;
+}
+
+.box-prices{
+	width: 224px;
+	height: 16px;
+	color:#666;
+	font-size: 12px;
+	text-align: center;
+	float: left;
+}
+
+
+.content-4{
+	height: 400px;
+	width: 224px;
+	float: left;
+	margin-left:-23px;
+}
+
+.content-4 .box1{
+   height: 400px;
+	width: 224px;
+	float: left;
+	z-index: 2;
+	border:1px solid #F0E5E5;
+	background: #FFFFFF;
+}
+
+.content-4 .box1:hover{
+	transform: scale(1.1);/*实现放大或缩小倍数*/
+	transition: .7s ease;
+	z-index: 10;
+	box-shadow:2px 2px 4px  #989191;/*box-shadow 向框添加一个或多个阴影。该属性是由逗号分隔的阴影列表，每个阴影由 2-4 个长度值、可选的颜色值以及可选的 inset 关键词来规定。省略长度的值是 0。*/
+}
+
+.box1 span{
+	height: 22px;
+    width: 224px;
+	text-align: center;
+	font-size:18px;
+	font-weight: 600;
+	float: left;
+	font-family:arial;
+	margin-top: 45px;
+}
+
+.box1-prices{
+	width: 224px;
+	height: 16px;
+	color:#666;
+	font-size: 12px;
+	text-align: center;
+	float: left;
+}
+
+.box1 a img {
+	height: 180px;
+	width:180px;
+	vertical-align:middle;
+	margin-left: 25px;
+	margin-top: 70px;
+}
+
+.box1 a img:hover{
+	transform: scale(1.05);/*实现放大或缩小倍数*/
+	transition: .7s ease; /*实现放大或缩小产生效果的时间*/
+}
+
+
+
+.content-5{
+	height: 400px;
+	width: 224px;
+	float: left;
+	margin-left:25px;
+}
+.content-5 .box{
+   height: 200px;
+	width: 224px;
+	float: left;
+	
+	z-index: 2;
+	border:1px solid #F0E5E5;
+	transition: .7s ease;
+	background: #FFFFFF;
+}
+
+.content-5 .box:hover{
+	transform: scale(1.1);/*实现放大或缩小倍数*/
+	transition: .7s ease;
+	z-index: 10;
+	box-shadow:2px 2px 4px  #989191;/*box-shadow 向框添加一个或多个阴影。该属性是由逗号分隔的阴影列表，每个阴影由 2-4 个长度值、可选的颜色值以及可选的 inset 关键词来规定。省略长度的值是 0。*/
+	
+}
+
+.box a img {
+	height: 147px;
+	width:147px;
+	vertical-align:middle;
+	margin-left: 40px;
+	margin-top: 10px;
+}
+
+.box a img:hover{
+	transform: scale(1.05);/*实现放大或缩小倍数*/
+	transition: .7s ease; /*实现放大或缩小产生效果的时间*/
+}
+
+.box span{
+	height: 22px;
+    width: 224px;
+	text-align: center;
+	font-size:18px;
+	font-weight: 600;
+	float: left;
+	font-family:arial;
+}
+
+.box-prices{
+	width: 224px;
+	height: 16px;
+	color:#666;
+	font-size: 12px;
+	text-align: center;
+	float: left;
+}

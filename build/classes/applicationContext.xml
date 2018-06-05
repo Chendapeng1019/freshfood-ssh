@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/aop
+	http://www.springframework.org/schema/aop/spring-aop.xsd
+	http://www.springframework.org/schema/tx 
+	http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+	<!-- 没有Hibernate配置文件 -->
+	<!-- 连接池信息 -->
+	<!-- 引入外部属性文件 -->
+	<!-- 引入外部属性文件 -->
+	<context:property-placeholder location="classpath:jdbc.properties" />
+
+	<!-- 配置c3p0连接池 -->
+	<bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+		<property name="driverClass" value="${jdbc.driver}"></property>
+		<property name="jdbcUrl" value="${jdbc.url}"></property>
+		<property name="user" value="${jdbc.user}"></property>
+		<property name="password" value="${jdbc.password}"></property>
+	</bean>
+
+
+	<!--零障碍整合在Spring配置文件中引入hibernate的配置文件 -->
+	<bean id="sessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<!-- 管理连接池 -->
+		<property name="dataSource" ref="dataSource"></property>
+		<!-- 配置Hibernate的属性 -->
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect">org.hibernate.dialect.MySQLDialect</prop>
+				<prop key="hibernate.show_sql">true</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">validate</prop>
+			</props>
+		</property>
+		<!-- 加载映射 -->
+		<property name="mappingResources">
+			<list>
+				<value>mo/UserMo.hbm.xml</value>
+				<value>mo/Commodity.hbm.xml</value>
+				<value>mo/Order.hbm.xml</value>
+				<!-- <value>mo/ShoppingNumberMo.hbm.xml</value> -->
+			</list>
+		</property>
+		<!-- <property name="mappingDirectoryLocations"> <list> <value>classpath:mo</value> 
+			</list> </property> -->
+	</bean>
+	<!-- =============== User =============== -->
+	<!-- 配置Action -->
+	<bean id="loginAction" class="action.user.LoginAction" scope="prototype">
+		<property name="loginService" ref="userService"></property>
+	</bean>
+	<bean id="registerAction" class="action.user.RegisterAction"
+		scope="prototype">
+		<property name="registerService" ref="userService"></property>
+	</bean>
+
+	<bean id="Login_Register_Ajax" class="action.ajax.Login_RegisterAjax"
+		scope="prototype">
+		<property name="log_reg_ajax" ref="userService"></property>
+	</bean>
+
+
+	<bean id="JieSuanAction" class="action.user.JieSuanAction" scope="prototype">
+		<property name="userService" ref="userService"></property>
+		<property name="cartItemService" ref="cartItemService"></property>
+	</bean>
+
+	<bean id="GetCityAction" class="action.ajax.GetCityAreaAction" scope="prototype">
+		<property name="userService" ref="userService"></property>
+	</bean>
+
+	<bean id="GetAreaAction" class="action.ajax.GetCityAreaAction" scope="prototype">
+		<property name="userService" ref="userService"></property>
+	</bean>
+
+	<bean id="SaveReceiveInfoAction" class="action.ajax.SaveReceiveInfoAction"
+		scope="prototype">
+		<property name="userService" ref="userService"></property>
+	</bean>
+
+	<bean id="SetMoRenAction" class="action.ajax.ReceiveAddAction"
+		scope="prototype">
+		<property name="userService" ref="userService"></property>
+	</bean>
+
+	<bean id="DeleteReceiveInfoAction" class="action.ajax.ReceiveAddAction"
+		scope="prototype">
+		<property name="userService" ref="userService"></property>
+	</bean>
+
+	<bean id="SavePayMethodAction" class="action.ajax.SavePayMethodAction"
+		scope="prototype">
+		<property name="userService" ref="userService"></property>
+	</bean>
+	
+	<bean id="AddReceiveAction" class="action.user.AddReceiveAction" scope="prototype">
+	   <property name="userService" ref="userService"></property>
+	</bean>
+	
+	<bean id="PayAction" class="action.user.PayAction" scope="prototype">
+	   <property name="userService" ref="userService"></property>
+	</bean>
+	
+	<bean id="AllOrderAction" class="action.user.AllOrderAction" scope="prototype">
+	    <property name="userService" ref="userService"></property>
+	</bean>
+	
+	<bean id="OrderInfoAction" class="action.user.OrderInfoAction" scope="prototype">
+	   <property name="userService" ref="userService"></property>
+	</bean>
+	<!-- Service的配置 --> 
+	<bean id="userService" class="service.UserService">
+		<property name="userDao" ref="userDao"></property>
+		<property name="cartItemDao" ref="cartItemDao"></property>
+		<property name="commodityDao" ref="commodityDao"></property>
+	</bean>
+
+	<!-- DAO的配置 -->
+	<bean id="userDao" class="dao.UserDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- =============== User END=============== -->
+
+	<!-- =============== Commodity =============== -->
+
+
+	<!-- 配置Action -->
+	<bean id="IndexAction" class="action.commodity.IndexAction" scope="prototype">
+		<property name="commodityService" ref="commodityService"></property>
+	</bean>
+
+	<bean id="SearchAction" class="action.commodity.SearchAction"
+		scope="prototype">
+		<property name="commodityService" ref="commodityService"></property>
+	</bean>
+
+	<bean id="CommodityInfoAction" class="action.commodity.CommodityInfoAction"
+		scope="prototype">
+		<property name="commodityService" ref="commodityService"></property>
+	</bean>
+	<!-- Service的配置 -->
+	<bean id="commodityService" class="service.CommodityService">
+		<property name="commodityDao" ref="commodityDao"></property>
+	</bean>
+	<!-- DAO的配置 -->
+	<bean id="commodityDao" class="dao.CommodityDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- =============== Commodity END=============== -->
+
+
+	<!-- =============== CartItem =============== -->
+	<!-- 配置Action -->
+	<bean id="JoinShopCarAction" class="action.commodity.JoinShopCarAction"
+		scope="prototype">
+		<property name="cartItemService" ref="cartItemService"></property>
+	</bean>
+
+	<bean id="MyShoppingCarAction" class="action.user.MyShoppingCarAction"
+		scope="prototype">
+		<property name="cartItemService" ref="cartItemService"></property>
+		<property name="userService" ref="userService"></property>
+	</bean>
+
+	<bean id="ChangNumberAction" class="action.user.ChangNumberAction"
+		scope="prototype">
+		<property name="cartItemService" ref="cartItemService"></property>
+	</bean>
+
+	<bean id="DeleteShopCarAction" class="action.user.DeleteShopCarAction"
+		scope="prototype">
+		<property name="cartItemService" ref="cartItemService"></property>
+	</bean>
+
+	<bean id="JoinOrderAction" class="action.user.JoinOrderAction"
+		scope="prototype">
+		<property name="cartItemService" ref="cartItemService"></property>
+	</bean>
+
+
+
+	<!-- Service的配置 -->
+	<bean id="cartItemService" class="service.CartItemService">
+		<property name="cartItemDao" ref="cartItemDao"></property>
+	</bean>
+	<!-- DAO的配置 -->
+	<bean id="cartItemDao" class="dao.CartItemDaoImpl">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+	<!-- =============== CartItem END =============== -->
+
+
+
+
+	<!-- 管理事务 -->
+	<bean id="transactionManager"
+		class="org.springframework.orm.hibernate3.HibernateTransactionManager">
+		<property name="sessionFactory" ref="sessionFactory"></property>
+	</bean>
+
+	<!-- 注解开启事务 -->
+	<tx:annotation-driven transaction-manager="transactionManager" />
+</beans>

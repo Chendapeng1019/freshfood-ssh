@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="mo.UserMo" table="customert">
+		<id name="cust_id" column="cust_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="cust_name" column="cust_name"></property>
+		<property name="cust_phone" column="cust_phone"></property>
+		<property name="cust_password" column="cust_password"></property>
+		<property name="cust_img" column="cust_img"></property>
+		<property name="integarl" column="integarl"></property>
+	</class>
+
+	<class name="mo.ShoppingNumberMo" table="shopcarnumber_view">
+		<id name="cust_id" column="cust_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="shoppingnumber" column="shoppingnumber"></property>
+	</class>
+
+
+	<class name="mo.Receive_InfoMo" table="receive_infot">
+		<id name="rece_id" column="rece_id">
+			<generator class="identity"></generator>
+		</id>
+		<property name="cust_id" column="cust_id"></property>
+		<property name="rece_name" column="rece_name"></property>
+		<property name="rece_tel" column="rece_tel"></property>
+		<property name="rece_add" column="rece_add"></property>
+		<property name="rece_time" column="rece_time"></property>
+		<property name="shengfen" column="shengfen"></property>
+		<property name="shi" column="shi"></property>
+		<property name="xianqu" column="xianqu"></property>
+		<property name="moren" column="moren"></property>
+	</class>
+
+	<class name="mo.ProvincesMo" table="provinces">
+		<id name="id" column="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="provinceid" column="provinceid"></property>
+		<property name="province" column="province"></property>
+	</class>
+
+
+	<class name="mo.CitiesMo" table="cities">
+		<id name="id" column="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="cityid" column="cityid"></property>
+		<property name="provinceid" column="provinceid"></property>
+		<property name="city" column="city"></property>
+	</class>
+
+
+	<class name="mo.AreasMo" table="areas">
+		<id name="id" column="id">
+			<generator class="native"></generator>
+		</id>
+		<property name="areaid" column="areaid"></property>
+		<property name="cityid" column="cityid"></property>
+		<property name="area" column="area"></property>
+	</class>
+
+
+</hibernate-mapping>
+    
+    

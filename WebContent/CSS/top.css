@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	font-family:Microsoft YaHei ;
+} /*整体字体*/
+
+a:link{
+	text-decoration:none;
+} /*带链接的字体*/
+
+a:hover{
+	color:#DD2124;
+}  /*当鼠标悬停在链接字体上*/
+
+li{
+	list-style: none;
+}
+
+ ul{margin: 0 auto;
+}
+
+/*顶部*/
+.top{
+	margin: 5px auto;
+	background:#FFFFFF;
+	width: 1600px;
+	height:35px; 
+}
+
+#cust_name{
+	color:#DD2124;
+}
+.top-left{
+	float:left;
+	margin-top:0px;
+	margin-left:60px; 
+}
+
+.top-left.font a{
+	font-size:16px;
+	color:#000000;}
+
+.top-left.font a:hover{
+	color:#DD2124;
+}
+
+.top-right{
+	float:right; 
+	margin-top:0px;
+	margin-right:60px;
+}
+
+.top-right.font a{
+	font-size:16px;
+	color:#000000;}
+
+.top-right.font a:hover{
+	color:#DD2124;
+}
+
+/*搜索框*/
+.search {
+	width:1600px;
+	height:90px;
+	background: #FFFFFF;
+	margin: 0 auto;
+}
+
+.searchframe {
+	border:2px;
+	border-color: #EF4620;
+	border-style:solid;
+	max-width: 670px;
+	height: 45px;
+} 
+
+.searchInput  {
+	float:left;
+	margin:2px;
+	border:none; 
+	width:460px; 
+	height: 41px; 
+	font-size: 20px; 
+	color: #171717;
+}
+
+.searchSubmit {
+	float:right;
+	margin:0px;
+	width:200px; 
+	border:none; 
+	height: 45px; 
+	font-size: 25px; 
+	color:#E7E7E7 ;
+	background:#EF4620;
+}
+
+
+/*导航栏*/
+.navigation_bar{
+	width: 1600px;
+	height: 45px;
+	 margin: 0 auto;
+}
+.navigation-bar{
+	height: 45px;
+	width:1300px;
+	margin-left: 260px;
+	font-size:16px;
+	background: #fff; 
+	line-height: 45px; /*设置line-height与父级元素的height相等*/
+    text-align: center; /*设置文本水平居中*/
+   
+	
+}
+
+.all-goods {
+	height: 45px;
+	float:left;/*float:left实现并行*/
+	width:180px;
+	font-size: 18px;
+	background-color: #E34245;
+	
+	color:#ffffff;
+}
+
+.sort li a{
+	width: 80px;
+	height: 45px;
+	background-color:#FFFFFF;
+	font-size: 20px;
+	font-weight: 900;
+	font-family:arial; 
+	float: left;
+	color: #000000;
+}
+.sort li a:hover{
+	color:#DD2124;
+}
+

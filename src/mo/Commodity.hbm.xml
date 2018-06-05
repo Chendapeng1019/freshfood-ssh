@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<!-- 首页商品 -->
+	<class name="mo.Commodity_ViewMo" table="commodity_view">
+		<id name="comm_id" column="comm_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="commodity_name" column="commodity_name"></property>
+		<property name="comm_name_plus" column="comm_name_plus"></property>
+		<property name="comm_price" column="comm_price"></property>
+		<property name="comment_number" column="comment_number"></property>
+		<property name="sales_number" column="sales_number"></property>
+		<property name="comm_info" column="comm_info"></property>
+		<property name="comm_number" column="comm_number"></property>
+		<property name="trademark" column="trademark"></property>
+		<property name="image1" column="image1"></property>
+		<property name="smalltype_name" column="smalltype_name"></property>
+		<property name="bigtype_name" column="bigtype_name"></property>
+		<property name="putaway_time" column="putaway_time"></property>
+	</class>
+
+	<!-- 活动秒杀商品 -->
+	<class name="mo.Activity_ViewMo" table="activity_view">
+		<id name="comm_id" column="comm_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="commodity_name" column="commodity_name"></property>
+		<property name="activityfood_price" column="activityfood_price"></property>
+		<property name="comm_price" column="comm_price"></property>
+		<property name="image1" column="image1"></property>
+		<property name="activity_time" column="activity_time"></property>
+	</class>
+
+
+	<class name="mo.ShoppingCarMo" table="shoppingcart" dynamic-update="true">
+		<id name="shop_id" column="shop_id">
+			<generator class="identity"></generator>
+		</id>
+		<property name="cust_id" column="cust_id"></property>
+		<property name="comm_id" column="comm_id"></property>
+		<property name="comm_number" column="comm_number"></property>
+		<property name="comm_price" column="comm_price"></property>
+		<property name="join_time" column="join_time"></property>
+	</class>
+
+
+
+	<class name="mo.ShopCar_ViewMo" table="shopcar_view" dynamic-update="true">
+		<id name="shop_id" column="shop_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="comm_id" column="comm_id"></property>
+		<property name="comm_name_plus" column="comm_name_plus"></property>
+		<property name="cust_id" column="cust_id"></property>
+		<property name="comm_number" column="comm_number"></property>
+		<property name="comm_price" column="comm_price"></property>
+		<property name="totalPrice" column="totalPrice"></property>
+		<property name="image1" column="image1"></property>
+		<property name="join_time" column="join_time"></property>
+	</class>
+
+	<class name="mo.CommodityMo" table="commodityt">
+		<id name="comm_id" column="comm_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="commodity_name" column="commodity_name"></property>
+		<property name="comm_number" column="comm_number"></property>
+		<property name="comment_number" column="comment_number"></property>
+		<property name="comm_info" column="comm_info"></property>
+		<property name="sales_number" column="sales_number"></property>
+		<property name="comm_price" column="comm_price"></property>
+		<property name="comm_name_plus" column="comm_name_plus"></property>
+		<property name="image1" column="image1"></property>
+		<property name="image2" column="image2"></property>
+		<property name="trademark" column="trademark"></property>
+		<property name="putaway_time" column="putaway_time"></property>
+	</class>
+
+	<class name="mo.Images_ViewMo" table="imagest">
+		<id name="image_id" column="image_id">
+			<generator class="identity"></generator>
+		</id>
+		<property name="comm_id" column="comm_id"></property>
+		<property name="images" column="images"></property>
+	</class>
+
+	<class name="mo.CommodityNamesMo" table="commoditynames">
+		<id name="comm_id" column="comm_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="bigtype_name" column="bigtype_name"></property>
+		<property name="smalltype_name" column="smalltype_name"></property>
+		<property name="commodity_name" column="commodity_name"></property>
+	</class>
+
+</hibernate-mapping>
+    
+    

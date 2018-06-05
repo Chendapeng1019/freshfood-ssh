@@ -1,0 +1,349 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-style: normal;
+}
+html{
+	font-family: arial;
+} /*整体字体*/
+
+a:link{
+	text-decoration:none;
+} /*带链接的字体*/
+
+a:hover{
+	color:#DD2124;
+}  /*当鼠标悬停在链接字体上*/
+
+li{
+	list-style: none;
+}
+
+ ul{margin: 0 auto;
+}
+.shopcarbx{
+	width: 1000px;
+	height: auto;
+	margin: 0 auto;
+
+}
+
+.infobox{
+	margin-top: 10px;
+	width: 1000px;
+	height: 50px;
+	box-shadow: 0px 0px 3px #999;
+	float:left;
+}
+
+.commodityinfo{
+	width: 450px;
+	height: 50px;
+	float: left;
+	margin-left: 40px;
+	font-size: 14px;
+	color: #3C3C3C;
+	line-height: 50px;
+}
+.pricesbox{
+	width: 100px;
+	height: 50px;
+	float: left;
+	font-size: 14px;
+	color: #3C3C3C;
+	line-height: 50px;
+	text-align: center;
+
+}
+.numberbox{
+	width: 150px;
+	height: 50px;
+	float: left;
+	font-size: 14px;
+	color: #3C3C3C;
+	line-height: 50px;
+	text-align: center;
+}
+
+.moneybox{
+	width: 100px;
+	height: 50px;
+	float: left;
+	font-size: 14px;
+	color: #3C3C3C;
+	line-height: 50px;
+	text-align: center;
+}
+
+.dobox{
+	width: 160px;
+	height: 50px;
+	float: left;
+	font-size: 14px;
+	color: #3C3C3C;
+	line-height: 50px;
+	text-align: center;
+}
+
+.commoditybox{
+	margin-top: 5px;
+	width: 1000px;
+	height: 140px;
+	float:left;
+	box-shadow: 0px 0px 1px #999;
+	margin-bottom: 5px;
+}
+.commoditybox.active{
+	display:none;
+}
+.fengelan{
+	width: 1000px;
+	height: 30px;
+	border-bottom: #CCC 1px dotted;/*边框为点状....*/
+	background: #eee;
+	float: left;	
+}
+
+.commodityinfo1{
+	width: 490px;
+	height: 110px;
+	float: left;
+}
+
+.checkbox{
+	width: 35px;
+	height: 110px;
+	float: left;
+}
+
+.checkbox input{
+	height: 13px;
+	width: 13px;
+	float: left;
+	margin-left: 15px;
+	margin-top: 10px;
+}
+
+.commodityimage{
+	width: 90px;
+	height: 110px;
+	float: left;
+}
+
+.commodityimage a img{
+	width: 80px;
+	height: 80px;
+	margin-left: 5px;
+	margin-top: 15px;
+	float: left;
+	vertical-align:middle;
+	box-shadow: 0px 0px 1px #999;
+}
+
+.commodityname{
+	width: 365px;
+	height: 110px;
+	float: left;
+}
+
+.commodityname a {
+	margin-top: 45px;
+	width: 365px;
+	text-align: center;
+	height:auto;
+	float: left;
+	font-size: 14px;
+	color: #000;
+}
+.commodityname a:hover {
+	color: #E74345;
+}
+
+.pricesbox1{
+	width: 100px;
+	height: 110px;
+	float: left;
+	font-size: 14px;
+	font-weight: 800;
+	color: #E74345;
+	line-height: 110px;
+	text-align: center;
+}
+
+.numberbox1{
+	width: 150px;
+	height: 110px;
+	float: left;
+}
+
+.reduce{
+	margin-left: 17px;
+	margin-right: 6px;
+	width: 30px;
+	height: 35px;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 400;
+	text-align: center;
+	float:left;
+	margin-top: 40px;
+}
+
+.commoditynumber{
+	width: 45px;
+	height: 25px;
+	font-size: 15px;
+	line-height: 25px;
+	font-weight: 600;
+	text-align: center;
+	float:left;
+	margin-top: 43px;
+}
+
+.add{
+	margin-left: 6px;
+	width: 30px;
+	height: 35px;
+	font-size: 15px;
+	line-height: 20px;
+	font-weight: 400;
+	text-align: center;
+	float:left;
+	margin-top: 40px;
+}
+
+.moneybox1{
+	width: 100px;
+	height: 110px;
+	float: left;
+	font-size: 15px;
+	font-weight: 500;
+	color: #E74345;
+	line-height: 110px;
+	text-align: center;
+}
+
+.dobox1{
+	width: 160px;
+	height: 110px;
+	float: left;
+}
+
+.joinfavorites {
+	cursor: pointer;
+	width: 160px;
+	height: 30px;
+	float: left;
+	margin-top: 25px;
+	line-height: 30px;
+	font-size: 15px;
+	text-align: center;
+	color:#000;
+}
+.joinfavorites:hover{
+	color:#DD2124;
+}
+.delect {
+	cursor: pointer;
+	width: 160px;
+	height: 30px;
+	float: left;
+	line-height: 30px;
+	font-size: 15px;
+	text-align: center;
+	color:#000;
+}
+.delect:hover{
+	color:#DD2124;
+}
+.comm_id{
+	width: 20px;
+	height: 20px;
+	float: left;
+	font-size: 13px;
+	text-align: center;
+	color:#fff;
+	
+}
+
+
+.hejibox{
+	width: 1000px;
+	height: 50px;
+	background: #eee;
+	float: left;
+	margin-top: 10px;
+	margin-bottom:15px;
+}
+
+.quanxuanbox{
+	float:left;
+	width: 60px;
+	height: 50px;
+	margin-left: 10px;
+}
+.quanxuan{
+	width: 15px;
+	height: 50px;
+	float: left;
+}
+
+.quanxuan input{
+	height: 15px;
+	width: 15px;
+	float: left;
+	margin-top: 17px;
+}
+.quanxuanbox span{
+	width: 45px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	font-size: 15px;
+	color: #000;
+}
+
+.selectedbox{
+	width: 450px;
+	height: 50px;
+	float: right;
+}
+.selectedcommoity{
+	width: 350px;
+	height: 50px;
+	float:left;
+	line-height: 50px;
+	text-align: center;
+	font-size: 15px;
+	color: #000;
+}
+.selectedcommoity label{
+	color:#EB5558;
+}
+
+
+.jiesuanbox{
+	width: 100px;
+	height: 50px;
+	float:left;
+	font-size: 18px;
+	line-height: 50px;
+	text-align: center;
+	background: #EC4143;
+	color: #fff;
+	display:none;
+	border:none;
+}
+
+.jiesuanbox.active{
+	display:block;
+}
+.jiesuanbox.active:hover{
+	background:#BBC424;
+	color: #fff;
+}
+

@@ -1,0 +1,739 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+html{
+	font-family:arial,"Lantinghei SC","Microsoft Yahei" ;
+	font-style: normal;
+} /*整体字体*/
+
+a:link{
+	text-decoration:none;
+} /*带链接的字体*/
+
+a:hover{
+	color:#DD2124;
+}  /*当鼠标悬停在链接字体上*/
+
+li{
+	list-style: none;
+}
+
+ ul{margin: 0 auto;
+}
+
+.paybox{
+	height: 1000px;;
+	width: 1000px;
+	margin: 0 auto;
+	/*background:#EC5255;*/
+}
+
+.topline{
+    height: 36px;
+    width: 1000px;
+	float:left;
+	margin-top: 10px;
+}
+
+.topline h3{
+	height: 36px;
+	width: 110px;
+	line-height: 36px;
+	font-size: 15px;
+	font-weight: 700;
+	float:left;
+}
+
+.usenewadd {
+	cursor: pointer;
+	float:left;
+	height: 36px;
+	width: 120px;
+	background: #dd514c;
+	color:#fff;
+	line-height: 36px;
+	font-size: 15px;
+	text-align: center;
+}
+
+.address ul{
+	width: 1000px;
+	height: auto;
+	float: left;
+}
+
+.address  li{
+	width: 255px;
+	height: 150px;
+	float:left;
+	background: url("../image/peraddbg.png") no-repeat scroll 0% 0%;
+	margin-right: 15px;
+	margin-top: 15px;
+}
+.address  li.selected{
+	background: url("../image/peraddressbg.png") no-repeat scroll 0% 0%;
+}
+
+.name_phone{
+	height: 35px;
+	width:160px;
+	margin-left: 9px;
+	float: left;
+}
+.name_phone .name{
+	height: 35px;
+	width:60px;
+	float: left;
+	line-height: 40px;
+	font-size:14px;
+	font-weight: 700;
+}
+.name_phone .phone{
+	height: 35px;
+	width:100px;
+	float: left;
+	line-height: 40px;
+	font-size:14px;
+	font-weight: 700;
+}
+
+.moren{
+	margin-top: 10px;
+	margin-left: 8px;
+	height: 20px;
+	width: 65px;
+	background: #CCC;
+	font-size: 14px;
+	line-height: 20px;
+	text-align: center;
+	color: #fff;
+	float: left;
+	visibility: hidden;
+}
+.moren.active{
+	visibility: visible;
+}
+
+.receviebox{
+	float: left;
+	width: 235px;
+	height: 70px;
+	margin-left: 9px;
+	font-size: 14px;
+	line-height:22px; 
+}
+.receviebox span{
+	float: left;
+	width: auto;
+	height: auto;
+	font-size: 14px;
+	line-height:22px; 
+}
+.receviebox .sheng{
+	float: left;
+	width: auto;
+	height: auto;
+	font-size: 14px;
+	line-height:22px; 
+}
+.receviebox .shi{
+	margin-left: 5px;
+	float: left;
+	width: auto;
+	height: auto;
+	font-size: 14px;
+	line-height:22px; 
+}
+
+.receviebox .xianqu{
+	margin-left: 5px;
+	float: left;
+	width: auto;
+	height: auto;
+	font-size: 14px;
+	line-height:22px; 
+}
+.receviebox .add{
+	margin-left: 5px;
+	float: left;
+	width: auto;
+	height: auto;
+	font-size: 14px;
+	line-height:22px; 
+	border:none;
+}
+.rece_id{
+	float: left;
+	margin-left: 10px;
+	width: 30px;
+	height: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	color:#fff;
+}
+.dobox{
+	float: right;
+	margin-right: 10px;
+	width: 165px;
+	height: 30px;
+}
+
+.setmoren{
+	float:left;
+	width: 80px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.setmoren.active{
+	visibility: hidden
+}
+.setmoren  span{
+	cursor: pointer;
+	float:left;
+	width: 60px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #000;
+}
+.setmoren  span:hover{
+	color:#DD2124;
+}
+
+.bianji{
+	float:left;
+	width: 50px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+}
+
+.bianji span{
+	cursor: pointer;
+	float:left;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #000;
+}
+.bianji span:hover{
+	color:#DD2124;
+}
+
+.delete span{
+	cursor: pointer;
+	float:left;
+	width: 35px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	color: #000;
+}
+.delete span:hover{
+	color:#DD2124;
+}
+
+.payways{
+	margin-top: 10px;
+	height: 90px;
+	width: 1000px;
+	float: left;
+/*	background: #CBC2C2;*/
+}
+
+.payways span{
+	height: 35px;
+	width: 1000px;
+	float: left;
+	color: #000;
+	line-height: 35px;
+	font-size: 15px;
+	font-weight: 700;
+	border-bottom: 2px solid #F1F1F1;
+}
+
+.payways ul{
+	float: left;
+	height: 55px;
+	width: 1000px;
+	/*background: #BB6465;*/
+}
+
+.payways ul li{
+	float: left;
+	height: 55px;
+	width: 180px;
+	margin-left: 10px;
+}
+.payways ul li.selected{
+	border:2px solid #F03726;
+	background: url("../image/selected.gif")  no-repeat right bottom;
+}
+
+.payways ul li img{
+	margin-top: 9px;
+	width: 54px;
+	height: 36px;
+	float: left;
+	vertical-align:middle;
+}
+
+.payways ul li span{
+	margin-left: 20px;
+	width: 80px;
+	height: 55px;
+	line-height: 55px;
+	font-size: 15px;
+	font-weight: 300;
+	border:none;
+}
+
+.ordercheck{
+	margin-top: 15px;
+	height: 35px;
+	width: 1000px;
+	float: left;
+	color: #000;
+	line-height: 35px;
+	font-size: 15px;
+	font-weight: 700;
+	border-bottom: 2px solid #F1F1F1;
+}
+.commoditybox{
+	height: auto;
+	width: 1000px;
+	float: left;
+}
+
+.infobox{
+	margin-top: 10px;
+	width: 1000px;
+	height: 50px;
+	box-shadow: 0px 0px 3px #999;
+    background: #eee;
+	float:left;
+	
+}
+
+.commodityinfo{
+	width: 550px;
+	height: 50px;
+	float: left;
+	font-size: 14px;
+	color: #3C3C3C;
+	line-height: 50px;
+	text-align: center;
+
+}
+.pricesbox{
+	width: 150px;
+	height: 50px;
+	float: left;
+	font-size: 14px;
+	color: #3C3C3C;
+	line-height: 50px;
+	text-align: center;
+}
+.numberbox{
+	width: 150px;
+	height: 50px;
+	float: left;
+	font-size: 14px;
+	color: #3C3C3C;
+	line-height: 50px;
+	text-align: center;
+}
+
+.moneybox{
+	width: 150px;
+	height: 50px;
+	float: left;
+	font-size: 14px;
+	color: #3C3C3C;
+	line-height: 50px;
+	text-align: center;
+}
+
+.commoditybox{
+	width: 1000px;
+	height: 110px;
+	float:left;
+	box-shadow: 0px 0px 1px #999;
+}
+
+.commodityinfo1{
+	width: 550px;
+	height: 110px;
+	float: left;
+}
+
+.commodityimage{
+	width:90px;
+	height: 110px;
+	float: left;
+	margin-left: 10px;
+}
+
+.commodityimage a img{
+	width:80px;
+	height: 80px;
+	margin-left: 5px;
+	margin-top: 15px;
+	float: left;
+	vertical-align: middle;
+	box-shadow: 0px 0px 1px #999;
+}
+
+.commodityname{
+    width:450px;
+	height: 110px;
+	float: left;
+}
+
+.commodityname a{
+	
+	margin-top: 45px;
+	width: 450px;
+	text-align: center;
+	height:auto;
+	float: left;
+	font-size: 14px;
+	color: #000;
+}
+.commodityname a:hover {
+	color: #E74345;
+}
+
+
+.pricesbox1{
+	width: 150px;
+	height: 110px;
+	float: left;
+	font-size: 14px;
+	color: #3C3C3C;
+	line-height: 110px;
+	text-align: center;
+}
+
+
+.numberbox1{
+	width: 150px;
+	height: 110px;
+	float: left;
+	font-size: 14px;
+	color: #3C3C3C;
+	line-height: 110px;
+	text-align: center;
+}
+
+.moneybox1{
+	width: 150px;
+	height: 110px;
+	float: left;
+	font-size: 14px;
+	color: #3C3C3C;
+	line-height: 110px;
+	text-align: center;
+}
+
+.fukuanbox{
+	margin-top: 15px;
+	width: 1000px;
+	height: 220px;
+	float: left;
+}
+
+.fukuan{
+	width:420px;
+	height: 140px;
+	float: right;
+	border:2px solid #f40;
+	padding: 10px 10px;
+}
+
+.totalprice{
+	width:415px;
+	height: 35px;
+	float:left;
+}
+.totalprice em{
+	float:right;
+	font-style: normal;
+	/*margin-left: 210px;*/
+	font-size: 14px;
+	line-height: 35px;
+}
+.totalprice span{
+	float:right;
+	font-size: 26px;
+	line-height: 35px;
+}
+.totalprice strong{
+	float:right;
+	color:#FF4200;
+	font:700 26px tahoma;
+}
+
+.useradd{
+	float:left;
+	margin-left:  15px;
+	margin-top: 20px;
+	width: 400px;
+	height: 40px;
+	font-size: 15px;
+	line-height:20px;
+}
+.useradd span{
+	float:left;
+	width: auto;
+	height: auto;
+	font-size:15px;
+	color: #404040;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+
+.useradd .add{
+	float:left;
+	width: 330px;
+	height: 50px;
+	color:#000;
+	font-size:15px;
+	line-height:20px;
+	border:none;
+}
+.rece_id1{
+	float:left;
+	margin-top: 20px;
+	width:30px;
+	height:20px;
+	color:#fff;
+	line-height: 20px;
+	font-size:10px;
+}
+.paymethod{
+	float:left;
+	margin-top: 20px;
+	width:60px;
+	height:20px;
+	color:#000;
+	line-height: 20px;
+	font-size:14px;
+}
+.receviepeople{
+	margin-top: 10px;
+	width:220px;
+	height: 40px;
+	float: right;
+	color:#000;
+	line-height: 40px;
+	font-size:15px;
+}
+.receviepeople span{
+	float:left;
+	font-size:15px;
+	color: #404040;
+    font-weight: 700;
+}
+.receviepeople em{
+	float:left;
+	width:auto;
+	height: 40px;
+}
+.receviepeople .name{
+	width:50px;
+	height: 40px;
+	float: left;
+	color:#000;
+	line-height: 40px;
+	font-size:15px;
+	border:none;
+}
+.receviepeople .phone{
+	width:100px;
+	height: 40px;
+	float:left;
+	color:#000;
+	line-height: 40px;
+	font-size:15px;
+	border:none;
+}
+.tijiaobox{
+	margin-top: 15px;
+	width:1000px;
+	height: 35px;
+	float: left;
+}
+.tijiao{
+	width:120px;
+	height: 35px;
+	float: right;
+	background: #f50;
+	color: #fff;
+	line-height: 35px;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 400;
+	border:none;
+}
+
+.tijiao:hover{
+     background:#A1EB73;
+	opacity: 0.5;
+}
+.bodybackground{
+	display: none;
+	z-index: 10000;
+	position: fixed;
+	left:0;
+	top:0;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	opacity: 0.5;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+}
+
+
+.newaddbox{
+	
+	display: none;
+	overflow: hidden;
+	z-index: 100001;
+	position: fixed;
+	bottom: 50%;
+	left:50%;
+	width: 500px;
+	height: 400px;
+	margin-bottom: -200px;
+	margin-left: -250px;
+	background: #fff;
+	
+}
+
+.newadd{
+	width: 500px;
+	height: 45px;
+	float: left;
+	font-size: 14px;
+	line-height: 45px;
+	color: #000;
+	box-shadow: 0px 0px 1px #999;
+}
+.newadd span{
+	margin-left:10px;
+	font-size: 18px;
+	color: #dd514c;
+	line-height: 45px;
+}
+
+
+.infobox1{
+	width:458px;
+	height: 325px;
+	float: left;
+	margin-left: 21px;
+	margin-top: 7px;
+}
+
+.linebox{
+	width:458px;
+	height: 32px;
+	float: left;
+	margin-bottom: 15px;
+}
+.linebox input{
+	float: left;
+    width:330px;
+    height: 32px;
+	font-size:14px;
+	line-height: 32px;
+	padding-left: 10px;
+}
+
+.linebox select{
+	margin-right:10px;; 
+	width:110px;
+	height: 32px;
+	float:left;
+	font-size:14px;
+	line-height: 32px;
+	color:#4B4A4A;
+	box-shadow: 0px 0px 2px #999;
+	background: #fff;
+	padding-left: 20px;
+}
+
+.linbox1{
+	width:458px;
+	height: 80px;
+	float: left;
+	margin-bottom: 60px;
+}
+
+.linbox1 textarea{
+	float: left;
+    width:330px;
+    height: 80px;
+	font-size:14px;
+	padding-left: 10px;
+	padding-top: 7px;
+}
+.xinxibox{
+	margin-right: 15px;
+	height: 32px;
+	width: 80px;
+	float: left;
+}
+
+.xinxibox em{
+	float: right;
+	font-size:14px; 
+	line-height: 32px;
+	font-style: normal;
+}
+
+.linebox2{
+	width:458px;
+	height: 32px;
+	float: left;
+}
+
+.save {
+	cursor: pointer;
+	width: 60px;
+	height: 32px;
+	float: left;
+	margin-left: 170px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 32px;
+	color: #fff;
+    background: #dd514c;
+    border:none;
+}
+
+.exit {
+	cursor: pointer;
+	width: 60px;
+	height: 32px;
+	float: left;
+	margin-left: 15px;
+	font-size: 14px;
+	text-align: center;
+	line-height: 32px;
+	color: #fff;
+    background: #dd514c;
+}
+
+

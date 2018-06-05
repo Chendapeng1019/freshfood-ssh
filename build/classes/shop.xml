@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+
+	<package name="shop" namespace="/shop" extends="struts-default">
+		<action name="joinShopCar" class="JoinShopCarAction" method="joinShopCar">
+			<result>/front/jionshopcar.jsp</result>
+			<result name="error">/front/NoLogin.jsp</result>
+		</action>
+
+		<action name="showMyShopCar" class="MyShoppingCarAction"
+			method="myShoppingCar">
+			<result>/front/shopcar.jsp</result>
+			<result name="error">/front/NoLogin.jsp</result>
+		</action>
+
+		<action name="JoinOrder" class="JoinOrderAction" method="joinOrder">
+			<result type="redirectAction">
+				<param name="actionName">JieSuan</param>
+				<param name="order_id">${order_id}</param>
+			</result>
+			<result name="error">/front/NoLogin.jsp</result>
+		</action>
+
+		<action name="JieSuan" class="JieSuanAction" method="jieSuan">
+			<result name="error">/front/NoLogin.jsp</result>
+			<result>/front/pay.jsp</result>
+		</action>
+
+		<action name="addReceive" class="AddReceiveAction" method="addReceive">
+			<result type="redirectAction">
+			   <param name="actionName">JieSuan</param>
+			   <param name="order_id">${order_id}</param>
+			</result>
+		</action>
+       <action name="Pay" class="PayAction" method="pay">
+           <result>/front/success.jsp</result>
+       </action>
+       
+       <action name="AllOrder" class="AllOrderAction" method="allOrder">
+           <result>/front/order.jsp</result>
+           <result name="error">/front/NoLogin.jsp</result>
+       </action>
+       
+       <action name="OrderInfo" class="OrderInfoAction" method="orderInfo">
+          <result>/front/orderinfo.jsp</result>
+       </action>
+	</package>
+
+
+
+
+</struts>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<!-- 订单信息 -->
+	<class name="mo.OrderMo" table="ordert">
+		<id name="order_id" column="order_id">
+			<generator class="identity"></generator>
+		</id>
+		<property name="cust_id" column="cust_id"></property>
+		<property name="order_state" column="order_state"></property>
+		<property name="pay_method" column="pay_method"></property>
+		<property name="pay_no" column="pay_no"></property>
+		<property name="order_time" column="order_time"></property>
+		<property name="is_send" column="is_send"></property>
+		<property name="paymoney_time" column="paymoney_time"></property>
+		<property name="return_repay" column="return_repay"></property>
+		<property name="shenqing_time" column="shenqing_time"></property>
+		<property name="is_receive" column="is_receive"></property>
+		<property name="rece_name" column="rece_name"></property>
+		<property name="rece_tel" column="rece_tel"></property>
+		<property name="rece_add" column="rece_add"></property>
+	</class>
+
+	<!-- 订单详情 -->
+	<class name="mo.OrderdetailsMo" table="orderdetailst">
+		<id name="orderdetails_id" column="orderdetails_id">
+			<generator class="identity"></generator>
+		</id>
+		<property name="comm_id" column="comm_id"></property>
+		<property name="order_id" column="order_id"></property>
+		<property name="comm_number" column="comm_number"></property>
+		<property name="comm_price" column="comm_price"></property>
+		<property name="is_comment" column="is_comment"></property>
+
+	</class>
+
+	<class name="mo.JieSuan_ViewMo" table="jiesuan_view"
+		dynamic-update="true">
+		<id name="orderdetails_id" column="orderdetails_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="cust_id" column="cust_id"></property>
+		<property name="order_id" column="order_id"></property>
+		<property name="comm_id" column="comm_id"></property>
+		<property name="image1" column="image1"></property>
+		<property name="comm_name_plus" column="comm_name_plus"></property>
+		<property name="comm_price" column="comm_price"></property>
+		<property name="comm_number" column="comm_number"></property>
+		<property name="sum_price" column="sum_price"></property>
+	</class>
+
+
+	<class name="mo.ShouHuoInfo_ViewMo" table="shouhuoinfo_view"
+		dynamic-update="true">
+		<id name="order_id" column="order_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="cust_id" column="cust_id"></property>
+		<property name="rece_name" column="rece_name"></property>
+		<property name="rece_tel" column="rece_tel"></property>
+		<property name="rece_add" column="rece_add"></property>
+		<property name="totalprice" column="totalprice"></property>
+	</class>
+
+	<class name="mo.Order_ViewMo" table="order_view" dynamic-update="true">
+		<id name="order_id" column="order_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="cust_id" column="cust_id"></property>
+		<property name="order_state" column="order_state"></property>
+		<property name="order_time" column="order_time"></property>
+		<property name="is_send" column="is_send"></property>
+		<property name="paymoney_time" column="paymoney_time"></property>
+		<property name="is_receive" column="is_receive"></property>
+		<property name="totalprice" column="totalprice"></property>
+		<property name="is_comment" column="is_comment"></property>
+	</class>
+
+	<class name="mo.Order_Commodity_ViewMo" table="order_commodity_view"
+		dynamic-update="true">
+		<id name="orderdetails_id" column="orderdetails_id">
+			<generator class="native"></generator>
+		</id>
+		<property name="order_id" column="order_id"></property>
+		<property name="comm_id" column="comm_id"></property>
+		<property name="comm_price" column="comm_price"></property>
+		<property name="comm_number" column="comm_number"></property>
+		<property name="image1" column="image1"></property>
+		<property name="comm_name_plus" column="comm_name_plus"></property>
+	</class>
+  
+  <class name="mo.Order_Details_ViewMo" table="order_details_view" dynamic-update="true">
+     <id name="order_id" column="order_id">
+        <generator class="native"></generator>
+     </id>
+     <property name="cust_id" column="cust_id"></property>
+     <property name="order_state" column="order_state"></property>
+     <property name="order_time" column="order_time"></property>
+     <property name="is_send" column="is_send"></property>
+     <property name="paymoney_time" column="paymoney_time"></property>
+     <property name="is_receive" column="is_receive"></property>
+     <property name="totalprice" column="totalprice"></property>
+     <property name="is_comment" column="is_comment"></property>
+     <property name="rece_name" column="rece_name"></property>
+     <property name="rece_tel" column="rece_tel"></property>
+     <property name="rece_add" column="rece_add"></property>
+  </class>
+
+
+</hibernate-mapping>
+    
+    

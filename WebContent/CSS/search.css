@@ -1,0 +1,385 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	font-style: normal;
+}
+html{
+	font-family: Verdana;
+} /*整体字体*/
+
+a:link{
+	text-decoration:none;
+} /*带链接的字体*/
+
+a:hover{
+	color:#DD2124;
+}  /*当鼠标悬停在链接字体上*/
+
+li{
+	list-style: none;
+}
+
+ ul{margin: 0 auto;
+}
+.searchbox{
+	width: 1200px;
+	height: 1302px;
+	margin: auto;
+}
+
+.foodsortbox{
+	width: 1200px;
+	height: 200px;
+	margin: 20px 0px 0px 0px;
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 0px 2px #999;
+	float: left;
+	background: #fff;
+}
+.foodsortbox span{
+	width: 1200px;
+	height: 20px;
+	line-height: 20px;
+	float: left;
+	margin: 5px 0 8px 0;
+}
+
+
+
+.foodsortbox span strong{
+	font-size: 12px;
+	font-weight: 400;
+	float:left;
+	color:#F71418;
+}
+
+.foodsortbox span em{
+	font-size: 12px;
+	float:left;
+	color:#6B6868;
+}
+
+
+.foodsortbox li{
+	width: 1200px;
+	height: 55px;
+	float: left;
+	border-top:2px dashed #eee;
+}
+.foodsortbox li span{
+	margin: 0px 0px 0px 10px;
+	width: 100px;
+	height: 51px;
+	line-height: 51px;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 700;
+	/*background: #E84649;*/
+	color:#6B6868;
+	float:left;
+}
+.foodsortbox li em a{
+	width: auto;
+	margin-top: 15px;
+	margin-right: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 12px;
+	color:#000;
+	float:left;
+}
+.foodsortbox li em a:hover{
+	color:#F44346;
+	background:#F4BBA1;
+}
+
+
+.selectsortbox{
+	float: left;
+	width:1200px;
+	height: 35px;
+	margin:10px 0 15px 0;
+}
+.selectsort{
+	float: left;
+	background: #fff;
+	width:400px;
+	height: 35px;
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 0px 2px #999;
+}
+
+.zhonghe a{
+ 	height: 35px;
+	width: 100px;
+	font-size: 13px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 0px 2px #999;
+	color:#000;
+	cursor: pointer;
+	float: left;
+}
+.zhonghe a.active{
+	background: #e4393c;
+	color: #fff;
+}
+.xiaoliang a{
+	height: 35px;
+	width: 100px;
+	font-size: 13px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 0px 2px #999;
+	color:#000;
+	cursor: pointer;
+	float: left;
+}
+.xiaoliang a.active{
+	background: #e4393c;
+	color: #fff;
+}
+.jiage a{
+	height: 35px;
+	width: 100px;
+	font-size: 13px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 0px 2px #999;
+	color:#000;
+	cursor: pointer;
+	float: left;
+}
+.jiage a.active{
+	background: #e4393c;
+	color: #fff;
+}
+.pinglun a{
+	height: 35px;
+	width: 100px;
+	font-size: 13px;
+	line-height: 35px;
+	text-align: center;
+	border-radius: 0px 0px 4px 4px;
+	box-shadow: 0px 0px 2px #999;
+	color:#000;
+	cursor: pointer;
+	float: left;
+}
+.pinglun a.active{
+	background: #e4393c;
+	color: #fff;
+}
+
+.food{
+	height: 900px;
+	width: 1200px;
+	float: left;
+}
+.foodbox{
+	float: left;
+	width: 222px;
+	height: 400px;
+	z-index: 1;
+	background: #fff;
+	border-radius: 4px 4px 4px 4px;
+	box-shadow: 0px 0px 2px #999;
+	padding: 38px 9px 10px 9px;
+	transition: .7s ease;
+	left:0;
+	top:0;
+}
+.foodbox:hover{
+	transform: scale(1.1);/*实现放大或缩小倍数*/
+	transition: .7s ease;
+	z-index: 10;
+	box-shadow:2px 2px 4px  #989191;
+}
+.foodimg a img{
+	width: 222px;
+	height: 222px;
+	vertical-align:middle;
+	transition: .7s ease;
+}
+.foodimg a img:hover{
+	transform: scale(1.08);/*实现放大或缩小倍数*/
+	transition: .7s ease;
+}
+.pricebox{
+	width: 222px;
+	height: 22px;
+	line-height: 22px;
+	margin: 0px 0px 8px 0px;
+	color:#e4393c;
+	font-weight: 400;
+	float:left;
+	margin-top: 10px;
+}
+
+.pricebox em{
+	font-size: 16px;
+	margin-left: 10px;
+	width: auto;
+	height: auto;
+	float:left;
+}
+.pricebox i{
+	font-size: 20px;
+	width: auto;
+	float:left;
+	height: auto;
+	
+}
+
+.commodityname{
+	width: 222px;
+	height: 40px;
+	float:left;
+}
+.commodityname i{
+	color:#666;
+	margin-right:3px;
+	margin-top: 2px;
+	height: 20px;
+	line-height: 20px;
+	font-size:13px;
+}
+
+.pinglunshu_xiaoliang{
+	width:222px;
+	height: 18px;
+	margin-top: 10px;
+	margin-bottom: 9px;
+	float: left;
+}
+.pinglunshu_xiaoliang strong a{
+	color: #646fb0;
+    font-weight: 700;
+	float: left;
+	font-size: 15px;
+}
+.pinglunshu_xiaoliang span{
+	float: left;
+	color:#999;
+	font-size: 14px;
+}
+
+.pinglunshu_xiaoliang em{
+	float: right;
+	color:#000;
+	font-size: 14px;
+}
+
+.pinglunshu_xiaoliang i{
+	float: right;
+	color:#EF3235;
+	font-size: 14px;
+}
+
+
+.chandi{
+	width: 222px;
+	height: 18px;
+	line-height: 18px;
+	color:#999;
+	margin: 0px 0px 10px 0px;
+	font-size: 13px;
+	float: left;
+}
+
+.bottombox{
+	height: 30px;
+	width: 222px;
+	float: left;
+}
+
+.guanzhu a{
+	height: 30px;
+	width: 50px;
+	box-shadow: 0px 0px 2px #999;
+	float: left;
+	margin-left: 15px;
+	background-image: url("../image/关注.png");
+	background-repeat: no-repeat;
+	background-position:left;
+	padding-left: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #999;
+	cursor:pointer;
+}
+
+.guanzhu a:hover{
+	background-image:url("../image/已关注.png");
+	border: 1px solid #F04245;
+	color:#F04245;
+}
+
+.jionshopcar a{
+	height: 30px;
+	width: 80px;
+	box-shadow: 0px 0px 2px #999;
+	background-image: url("../image/jionshopcar.png");
+	background-repeat: no-repeat;
+	background-position:left;
+	float: left;
+	padding-left: 30px;
+	font-size: 14px;
+	line-height: 30px;
+	color: #999;
+	cursor:pointer;
+}
+.jionshopcar a:hover{
+	border: 1px solid #F04245;
+	color:#F04245;
+}
+
+.fenyebox{
+	margin-top: 25px;
+	width:560px;
+	height: 38px;
+	float: left;
+	margin-left: 280px;
+	
+}
+
+.shangxiaye a{
+	width: 86px;
+	height: 38px;
+	text-align: center;
+	line-height: 38px;
+	font-size: 15px;
+	float: left;
+	box-shadow: 0px 0px 2px #999;
+	
+}
+.yeshu .active{
+	box-shadow: 0px 0px 2px #f00;
+	color:#F04245;
+}
+.yeshu li {
+	margin: 0 5px 0 5px;
+	width: 38px;
+	height: 38px;
+	text-align: center;
+	line-height: 38px;
+	font-size: 15px;
+	float: left;
+	box-shadow: 0px 0px 2px #999;
+}
+
+
+#zongyeshu{
+	float:left;
+	line-height: 38px;
+	color:#908E8E;
+	font-size: 15px;
+	margin-left: 40px;
+	
+}

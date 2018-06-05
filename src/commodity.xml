@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+ <struts>
+     
+       
+      <package name="index" namespace="/home" extends="struts-default">
+        <action name="index" class="IndexAction" method="index">
+          <result >/front/index.jsp</result>
+        </action>
+       
+       <action name="search" class="SearchAction" method="search">
+         <result>/front/search.jsp</result>
+       </action>
+      </package> 
+      
+    <package name="info" namespace="/info" extends="struts-default">
+       <action name="commodityinfo" class="CommodityInfoAction" method="commodityInfo">
+        <result>/front/introduction.jsp</result>
+       </action>
+      
+    </package>
+       
+ 
+ </struts>

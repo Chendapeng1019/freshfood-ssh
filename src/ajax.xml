@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+
+
+	<package name="ajax" namespace="/ajax" extends="json-default">
+		<action name="RegisterAjax" class="Login_Register_Ajax" method="register_ajax">
+			<result type="json"></result>
+		</action>
+
+		<action name="LoginAjax" class="Login_Register_Ajax" method="login_ajax">
+			<result type="json"></result>
+		</action>
+
+		<action name="ChangNumber" class="ChangNumberAction" method="changNumber">
+			<result type="json"></result>
+		</action>
+
+		<action name="DeleteShopCar" class="DeleteShopCarAction"
+			method="deleteShopCar">
+			<result type="json"></result>
+		</action>
+
+ 
+		<action name="getCity" class="GetCityAction" method="getCity">
+			<result type="json"> 
+			</result>
+		</action>
+		
+		<action name="getArea" class="GetAreaAction" method="getArea">
+			<result type="json">
+			</result>
+		</action> 
+		
+		
+		<action name="SaveReceiveInfo" class="SaveReceiveInfoAction" method="saveReceiveInfo">
+		     <result type="json"></result>
+		</action>
+		
+		<action name="setMoRen" class="SetMoRenAction" method="setMoRen">
+		    <result type="json"></result>
+		</action>
+		
+		<action name="DeleteReceiveInfo" class="DeleteReceiveInfoAction" method="deleteReceiveInfo">
+		    <result type="json"></result>
+		</action>
+		
+		<action name="SavePayMethod" class="SavePayMethodAction" method="savePayMethod">
+		  <result type="json"></result>
+		</action>
+	</package>
+
+
+
+</struts>

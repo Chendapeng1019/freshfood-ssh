@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+
+	<package name="login_register" namespace="/front" extends="struts-default">
+		<action name="Login" class="loginAction" method="login">
+			<result type="redirect">
+				<param name="location">/index.jsp</param>
+			</result>
+			<result name="error">/front/error.jsp</result>
+		</action>
+
+		<action name="CodeLogin" class="action.user.CodeAction" method="codeLogin">
+
+		</action>
+
+		<action name="CodeRegister" class="action.user.CodeAction"
+			method="codeRegister">
+
+		</action>
+
+
+		<action name="register" class="registerAction" method="register">
+			<result>/front/register_info.jsp</result>
+			<result name="error">/front/register_info.jsp</result>
+		</action>
+
+		<action name="select_login">
+			<result type="redirect">
+				<param name="location">/front/register_login.jsp</param>
+				<param name="select">login</param>
+			</result>
+		</action>
+
+		<action name="select_register">
+			<result type="redirect">
+				<param name="location">/front/register_login.jsp</param>
+				<param name="select">register</param>
+			</result>
+		</action>
+
+
+
+
+	</package>
+
+
+
+
+
+</struts>

@@ -1,0 +1,467 @@
+@charset "utf-8";
+/* CSS Document */
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+html{
+	font-family:arial,"Lantinghei SC","Microsoft Yahei" ;
+	font-style: normal;
+} /*整体字体*/
+
+body{
+	width: 100%;
+}
+a:link{
+	text-decoration:none;
+} /*带链接的字体*/
+
+a:hover{
+	color:#DD2124;
+}  /*当鼠标悬停在链接字体上*/
+
+li{
+	list-style: none;
+}
+
+ ul{margin: 0 auto;
+}
+
+.bodybox{
+	width: 1200px;
+	height: auto;
+	margin: 25px auto;
+}
+
+.linebox{
+	width: 1200px;
+	height: 40px;
+	float: left;
+	margin-bottom: 25px;
+}
+
+.linebox a {
+	width: auto;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	font-size: 15px;
+	color:#000;
+}
+.linebox a:hover{
+	color:#DD2124;
+}
+
+.linebox em{
+	width: auto;
+	height: 40px;
+	float: left;
+	line-height: 40px;
+	font-size: 14px;
+	color:#000;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+
+.commoditybox{
+	width: 1200px;
+	height: 400px;
+	float: left;
+	/*background: #D9A2A3;*/
+}
+
+.imgbox{
+	height: 400px;
+	width: 400px;
+	float: left;
+	box-shadow: 0px 0px 2px #999;
+}
+
+.imgbox img{
+	height: 400px;
+	width: 400px;
+	float: left;
+}
+
+.xuanze{
+	width: 700px;
+	height: 400px;
+	float: left;
+	margin-left: 30px;
+	/*background:#E0383A;*/
+}
+
+.nameline{
+	width: 700px;
+	height: 25px;
+	line-height: 25px;
+	float: left;
+	font-size:18px;
+	color:#000;
+	font-weight: 700;
+}
+
+.pricebox{
+	display: block;
+	margin-top:15px; 
+	width: 700px;
+	height: 100px;
+	float:left;
+	background: #F7F7F7;
+}
+
+
+.pricebox ul{
+	width: 700px;
+	height: 100px;
+	float:left;
+}
+
+.pricebox ul li{
+	width: 700px;
+	height: 33px;
+	float:left;
+}
+
+.p{
+	height: 33px;
+	width: 60px;
+	float: left;
+	margin-left: 10px;
+	font-size:14px;
+	color:#888;
+	line-height: 33px;
+}
+
+
+
+.youhui{
+	margin-left: 10px;
+	width: 600px;
+	height: 33px;
+	float: left;
+}
+
+.youhui p{
+	font-style: normal;
+	width: auto;
+	height: 33px;
+	float: left;
+	font-size:14px;
+	color:#E4393C;
+	font-weight: bold;
+	line-height: 33px;
+}
+
+.cuxiao{
+	margin-left: 10px;
+	width: 600px;
+	height: 33px;
+	float: left;
+}
+.cuxiao em{
+	font-style: normal;
+	width: auto;
+	height: 33px;
+	float: left;
+	line-height: 33px;
+	font-size:14px;
+	color:#c00;
+} 
+.cuxiao p{
+	font-style: normal;
+	width: auto;
+	height: 33px;
+	float: left;
+	font-size:24px;
+	color:#c00;
+	font-weight: bold;
+	line-height: 33px;
+}
+
+
+.yuanjia{
+	margin-left: 10px;
+	width: 600px;
+	height: 33px;
+	float: left;
+}
+.yuanjia em{
+	font-style: normal;
+	width: auto;
+	height: 33px;
+	float: left;
+	line-height: 33px;
+	font-size:14px;
+	color:#888;
+} 
+
+.yuanjia p{
+	font-style: normal;
+	width: auto;
+	height: 33px;
+	float: left;
+	font-size:14px;
+	color:#888;
+	font-weight: bold;
+	line-height: 33px;
+	text-decoration: line-through;
+}
+
+.xiaoliangbox{
+	margin-top:50px;
+	height: 45px;
+	width: 700px;
+	float: left;
+	border: dotted #C9C9C9;
+	border-width: 1px 0px;
+}
+
+.a{
+	
+	width: 233px;
+	height: 18px;
+	float: left;
+	margin-top: 14px;
+	text-align: center;
+	border-right: solid 1px #C9C9C9;
+}
+.a em{
+	font-style: normal;
+	margin-left: 75px;
+	width: auto;
+	height: 18px;
+	float: left;
+	font-size: 14px;
+	color:#333333;
+	line-height: 18px;
+}
+.a p{
+	font-style: normal;
+	margin-left: 5px;
+	width: auto;
+	height: 18px;
+	float: left;
+	font-size: 14px;
+	font-weight: 700;
+	color:#C40000;
+	line-height: 18px;
+}
+
+
+.b{
+	width: 230px;
+	height: 18px;
+	float: left;
+	margin-top: 14px;
+	text-align: center;
+}
+.b em{
+	font-style: normal;
+	margin-left: 75px;
+	width: auto;
+	height: 18px;
+	float: left;
+	font-size: 14px;
+	color:#333333;
+	line-height: 18px;
+}
+.b p{
+	font-style: normal;
+	margin-left: 5px;
+	width: auto;
+	height: 18px;
+	float: left;
+	font-size: 14px;
+	font-weight: 700;
+	color:#C40000;
+	line-height: 18px;
+}
+.numberbox{
+	margin-top: 70px;
+	height: 45px;
+	width: 700px;
+	float: left;
+}
+
+.number{
+	margin-left: 200px;
+	height: 44px;
+	width: 44px;
+	float: left;
+	border:1px solid #999;
+	color:#000;
+	line-height: 44px;
+	font-size:15px; 
+	font-weight: 700;
+	text-align: center;
+}
+
+.addreduce{
+	height: 44px;
+	width: 25px;
+	float: left;
+}
+
+.add{
+	cursor: pointer;
+	height: 21px;
+	width: 25px;
+	float: left;
+	color:#000;
+	font-size: 20px;
+	line-height: 20px;
+	text-align: center;
+	border:1px solid #999;
+	margin-bottom: 2px;
+}
+.reduce{
+	cursor: pointer;
+	height: 21px;
+	width: 25px;
+	float: left;
+	color:#000;
+	font-size: 20px;
+	line-height: 20px;
+	text-align: center;
+	border:1px solid #999;
+}
+
+/*.jionshopcar a{
+	margin-left: 10px;
+	height: 44px;
+	width: 140px;
+	background: #df3033;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 44px;
+	color:#fff;
+	float: left;
+	font-family: microsoft yahei;
+}
+
+.jionshopcar a:hover{
+	background:#A1EB73;
+	opacity: 0.5;
+}*/
+
+.jionshopcar{
+	margin-left: 10px;
+	height: 44px;
+	width: 140px;
+	background: #df3033;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	line-height: 44px;
+	color:#fff;
+	float: left;
+	font-family: microsoft yahei;
+	border:none;
+}
+
+.jionshopcar:hover{
+	background:#A1EB73;
+	opacity: 0.5;
+}
+.kucun{
+	margin-left: 100px;
+	height: 44px;
+	width: auto;
+	font-size: 14px;
+	text-align: center;
+	line-height: 44px;
+	color:#999;
+	float: left;
+}
+
+.infobox{
+	width: 900px;
+	height: auto;
+	float: left;
+	margin: 50px 150px; 
+}
+.infoline{
+	width: 900px;
+	height: 40px;
+	float: left;
+	background:#F5F5F5;
+}
+
+.infoline ul{
+	width: 900px;
+	height: 40px;
+	float: left;
+}
+
+.infoline ul li{
+	cursor:pointer;
+	width:200px;
+	height:40px;
+	float:left;
+	color:#666;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+}
+
+.infoline ul li.active{
+	background:#e4393c;
+	color:#fff;
+}
+
+.jieshaobox{
+	display: block;
+	width: 900px;
+	height: auto;
+	float: left;
+}
+
+.c{
+    float: left;
+	height: 35px;
+	width: 80px;
+	margin-top: 35px;
+	font-size: 14px;
+	border-bottom: 1px solid #F70;
+	margin-bottom: 2px;
+}
+
+.d{
+	float:left;
+	width: 900px;
+	height: auto;
+}
+.d ul{
+	margin:5px 0px;
+	height: auto;
+	width: 900px;
+	float: left;
+}
+
+.d ul li{
+	height: auto;
+	width: 300px;
+	float: left;
+	font-size: 14px;
+	color: #333333;
+}
+.e{
+	float: left;
+	width: 900px;
+	height: auto;
+}
+.e ul{
+	float: left;
+	width: 900px;
+	height: auto;
+}
+
+.e ul li img{
+	float: left;
+	width: 900px;
+	height: auto;
+}
